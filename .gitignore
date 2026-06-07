@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# App runtime artifacts
+tvdash/shots/
+*.log
+*.dbg
+
+# Secrets / device-specific — never commit
+ssh/
+*.pem
+*_key
+*_key.pub
+adbkey
+adbkey.pub
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,24 @@
+[project]
+name = "android-tv-dashboard"
+version = "1.0.0"
+description = "A no-root PySide6 desktop dashboard to monitor and control any Android TV / phone over ADB."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Biprodeep Roy" }]
+keywords = ["android", "adb", "android-tv", "monitoring", "scrcpy", "pyside6", "dashboard"]
+dependencies = ["PySide6>=6.5"]
+
+[project.scripts]
+tvdash = "tvdash.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/biprodeep/android-tv-dashboard"
+Source = "https://github.com/biprodeep/android-tv-dashboard"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tvdash"]

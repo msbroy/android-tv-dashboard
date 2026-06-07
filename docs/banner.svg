@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 232" width="820" height="232" role="img" aria-label="Android TV Dashboard - live device monitor and remote control over ADB">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11161f"/>
+      <stop offset="1" stop-color="#0c0f14"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="818" height="230" rx="16" fill="url(#bg)" stroke="#1d2530"/>
+
+  <!-- live connection dot -->
+  <circle cx="34" cy="40" r="6" fill="#3fb950">
+    <animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="50" y="46" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" fill="#e6edf3">Android TV Dashboard</text>
+  <text x="51" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#8aa0b6">Monitor &amp; control any Android TV or phone over ADB  ·  no root</text>
+
+  <!-- CPU tile -->
+  <g>
+    <rect x="32" y="104" width="230" height="100" rx="12" fill="#0e131a" stroke="#1d2530"/>
+    <text x="48" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#8aa0b6">CPU</text>
+    <text x="48" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#4ea1ff">34%</text>
+    <rect x="48" y="178" width="198" height="8" rx="4" fill="#1b2430"/>
+    <rect x="48" y="178" width="70" height="8" rx="4" fill="#4ea1ff">
+      <animate attributeName="width" values="60;150;90;170;70;120;60" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- RAM tile -->
+  <g>
+    <rect x="296" y="104" width="230" height="100" rx="12" fill="#0e131a" stroke="#1d2530"/>
+    <text x="312" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#8aa0b6">MEMORY</text>
+    <text x="312" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#7ee787">512 MB</text>
+    <rect x="312" y="178" width="198" height="8" rx="4" fill="#1b2430"/>
+    <rect x="312" y="178" width="120" height="8" rx="4" fill="#7ee787">
+      <animate attributeName="width" values="120;150;110;160;130;120" dur="5.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Wi-Fi tile + animated sparkline -->
+  <g>
+    <rect x="560" y="104" width="228" height="100" rx="12" fill="#0e131a" stroke="#1d2530"/>
+    <text x="576" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#8aa0b6">WI-FI</text>
+    <text x="576" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#56d4dd">-58 dBm</text>
+    <polyline fill="none" stroke="#56d4dd" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"
+      points="576,192 606,184 636,190 666,176 696,186 726,172 766,182">
+      <animate attributeName="points" dur="3.8s" repeatCount="indefinite"
+        values="576,192 606,184 636,190 666,176 696,186 726,172 766,182;
+                576,186 606,190 636,178 666,188 696,174 726,184 766,176;
+                576,190 606,176 636,188 666,172 696,184 726,178 766,190;
+                576,192 606,184 636,190 666,176 696,186 726,172 766,182"/>
+    </polyline>
+  </g>
+</svg>
